@@ -1,0 +1,648 @@
+data fluVirus;
+Input Columnname $ Subject Hours Gender $ Age SYM $ IFITM3;
+datalines;
+GSM757899 1 0 Female 29 Symp 11.4591512
+GSM757900 1 5 Female 29 Symp 11.4222603
+GSM757901 1 12 Female 29 Symp 11.4472113
+GSM757902 1 21 Female 29 Symp 11.540095
+GSM757903 1 29 Female 29 Symp 12.5428461
+GSM757904 1 36 Female 29 Symp 13.6052357
+GSM757905 1 45 Female 29 Symp 13.9741872
+GSM757906 1 53 Female 29 Symp 13.7967886
+GSM757907 1 60 Female 29 Symp 13.5562755
+GSM757908 1 69 Female 29 Symp 13.2732228
+GSM757909 1 77 Female 29 Symp 13.3307802
+GSM757910 1 84 Female 29 Symp 12.8418123
+GSM757911 1 93 Female 29 Symp 13.3254123
+GSM757912 1 101 Female 29 Symp 13.3858639
+GSM757913 1 108 Female 29 Symp 13.2517041
+GSM757915 2 0 Male 28 Asymp 10.9550641
+GSM757916 2 5 Male 28 Asymp 11.1757696
+GSM757917 2 12 Male 28 Asymp 11.3022849
+GSM757918 2 21 Male 28 Asymp 10.7186563
+GSM757919 2 29 Male 28 Asymp 11.3822638
+GSM757920 2 36 Male 28 Asymp 11.8319615
+GSM757921 2 45 Male 28 Asymp 11.9306932
+GSM757922 2 53 Male 28 Asymp 12.1438395
+GSM757923 2 60 Male 28 Asymp 12.4430119
+GSM757924 2 69 Male 28 Asymp 11.6795721
+GSM757925 2 77 Male 28 Asymp 11.7149172
+GSM757926 2 84 Male 28 Asymp 11.5709737
+GSM757927 2 93 Male 28 Asymp 11.0107342
+GSM757928 2 101 Male 28 Asymp 11.2973351
+GSM757929 2 108 Male 28 Asymp 11.428589
+GSM757931 3 0 Male 24 Asymp 11.080228
+GSM757932 3 5 Male 24 Asymp 10.9085166
+GSM757933 3 12 Male 24 Asymp 11.2629606
+GSM757934 3 21 Male 24 Asymp 10.731105
+GSM757935 3 29 Male 24 Asymp 11.4082469
+GSM757936 3 36 Male 24 Asymp 11.724525
+GSM757937 3 45 Male 24 Asymp 11.6360929
+GSM757938 3 53 Male 24 Asymp 11.1923075
+GSM757939 3 60 Male 24 Asymp 11.1335927
+GSM757940 3 69 Male 24 Asymp 11.3435367
+GSM757941 3 77 Male 24 Asymp 11.3597966
+GSM757942 3 84 Male 24 Asymp 11.5308719
+GSM757943 3 93 Male 24 Asymp 10.9789484
+GSM757944 3 101 Male 24 Asymp 10.4434743
+GSM757945 3 108 Male 24 Asymp 10.3705056
+GSM757947 4 0 Female 23 Asymp 11.6535478
+GSM757948 4 5 Female 23 Asymp 11.7987589
+GSM757949 4 12 Female 23 Asymp 11.8204174
+GSM757950 4 21 Female 23 Asymp 11.5932285
+GSM758165 4 29 Female 23 Asymp 11.8700593
+GSM757951 4 36 Female 23 Asymp 11.8397911
+GSM757952 4 45 Female 23 Asymp 12.0336851
+GSM757953 4 53 Female 23 Asymp 11.7632266
+GSM757954 4 60 Female 23 Asymp 11.7573903
+GSM757955 4 69 Female 23 Asymp 11.5269186
+GSM757956 4 77 Female 23 Asymp 11.6739972
+GSM757957 4 84 Female 23 Asymp 11.5827691
+GSM757958 4 93 Female 23 Asymp 11.197339
+GSM757959 4 101 Female 23 Asymp 11.2505259
+GSM757960 4 108 Female 23 Asymp 11.1038967
+GSM757962 5 0 Female 25 Symp 10.714355
+GSM757963 5 5 Female 25 Symp 10.8030285
+GSM757964 5 12 Female 25 Symp 10.5215274
+GSM757965 5 21 Female 25 Symp 10.3749379
+GSM757966 5 29 Female 25 Symp 10.0845821
+GSM757967 5 36 Female 25 Symp 10.9350245
+GSM757968 5 45 Female 25 Symp 12.7626063
+GSM757969 5 53 Female 25 Symp 13.6564461
+GSM757970 5 60 Female 25 Symp 13.7152159
+GSM757971 5 69 Female 25 Symp 13.6753255
+GSM757972 5 77 Female 25 Symp 13.6959433
+GSM757973 5 84 Female 25 Symp 13.6419658
+GSM757974 5 93 Female 25 Symp 13.6723021
+GSM757975 5 101 Female 25 Symp 13.7152159
+GSM757976 5 108 Female 25 Symp 13.7289192
+GSM757978 6 0 Female 28 Symp 13.3575769
+GSM757979 6 5 Female 28 Symp 13.358792
+GSM757980 6 12 Female 28 Symp 13.161185
+GSM757981 6 21 Female 28 Symp 13.2373914
+GSM757982 6 29 Female 28 Symp 13.4079797
+GSM757983 6 36 Female 28 Symp 13.9398619
+GSM757984 6 45 Female 28 Symp 14.0163112
+GSM757985 6 53 Female 28 Symp 14.0866731
+GSM757986 6 60 Female 28 Symp 13.9032442
+GSM757987 6 69 Female 28 Symp 13.9998247
+GSM757988 6 77 Female 28 Symp 13.9268337
+GSM757989 6 84 Female 28 Symp 14.0135252
+GSM757990 6 93 Female 28 Symp 13.8689534
+GSM757991 6 101 Female 28 Symp 13.6954375
+GSM757992 6 108 Female 28 Symp 13.8359725
+GSM757994 7 0 Male 35 Symp 10.4757826
+GSM757995 7 5 Male 35 Symp 10.7756485
+GSM757996 7 12 Male 35 Symp 10.6431268
+GSM757997 7 21 Male 35 Symp 11.0438932
+GSM757998 7 29 Male 35 Symp 11.171275
+GSM757999 7 36 Male 35 Symp 11.8573427
+GSM758000 7 45 Male 35 Symp 13.3676106
+GSM758001 7 53 Male 35 Symp 13.8142614
+GSM758002 7 60 Male 35 Symp 13.9057538
+GSM758003 7 69 Male 35 Symp 13.8083936
+GSM758004 7 77 Male 35 Symp 13.5306466
+GSM758005 7 84 Male 35 Symp 13.3802965
+GSM758006 7 93 Male 35 Symp 13.4079797
+GSM758007 7 101 Male 35 Symp 13.5273796
+GSM758008 7 108 Male 35 Symp 13.5273292
+GSM758010 8 0 Male 25 Symp 10.6052212
+GSM758011 8 5 Male 25 Symp 10.9614075
+GSM758012 8 12 Male 25 Symp 10.8307257
+GSM758012 8 21 Male 25 Symp 10.892
+GSM758013 8 29 Male 25 Symp 10.9545111
+GSM758014 8 36 Male 25 Symp 10.8955059
+GSM758015 8 45 Male 25 Symp 11.2368227
+GSM758016 8 53 Male 25 Symp 12.2296567
+GSM758017 8 60 Male 25 Symp 13.2275939
+GSM758018 8 69 Male 25 Symp 13.6883204
+GSM758019 8 77 Male 25 Symp 13.7158271
+GSM758020 8 84 Male 25 Symp 13.6170867
+GSM758021 8 93 Male 25 Symp 13.1309451
+GSM758022 8 101 Male 25 Symp 13.1184491
+GSM758023 8 108 Male 25 Symp 12.6711858
+GSM758025 9 0 Male 24 Asymp 11.5931303
+GSM758026 9 5 Male 24 Asymp 11.5379165
+GSM758027 9 12 Male 24 Asymp 11.6759995
+GSM758028 9 21 Male 24 Asymp 11.7155438
+GSM758029 9 29 Male 24 Asymp 11.5511908
+GSM758030 9 36 Male 24 Asymp 11.8015239
+GSM758031 9 45 Male 24 Asymp 11.7581528
+GSM758032 9 53 Male 24 Asymp 11.5172997
+GSM758033 9 60 Male 24 Asymp 11.7946833
+GSM758034 9 69 Male 24 Asymp 11.6678981
+GSM758035 9 77 Male 24 Asymp 11.8556356
+GSM758036 9 84 Male 24 Asymp 11.8653511
+GSM758037 9 93 Male 24 Asymp 11.530127
+GSM758038 9 101 Male 24 Asymp 11.6118455
+GSM758039 9 108 Male 24 Asymp 11.6826174
+GSM758041 10 0 Female 22 Symp 12.3013566
+GSM758042 10 5 Female 22 Symp 12.19246
+GSM758043 10 12 Female 22 Symp 12.2936145
+GSM758044 10 21 Female 22 Symp 12.2413399
+GSM758045 10 29 Female 22 Symp 12.1134849
+GSM758046 10 36 Female 22 Symp 12.3165435
+GSM758047 10 45 Female 22 Symp 12.4059374
+GSM758048 10 53 Female 22 Symp 12.6807606
+GSM758049 10 60 Female 22 Symp 13.3628655
+GSM758050 10 69 Female 22 Symp 13.7649728
+GSM758051 10 77 Female 22 Symp 13.7015969
+GSM758052 10 84 Female 22 Symp 13.7354653
+GSM758053 10 93 Female 22 Symp 13.5965826
+GSM758054 10 101 Female 22 Symp 13.6893387
+GSM758055 10 108 Female 22 Symp 13.4194804
+GSM758057 11 0 Female 25 Asymp 10.4586925
+GSM758058 11 5 Female 25 Asymp 9.91359094
+GSM758059 11 12 Female 25 Asymp 10.4592836
+GSM758060 11 21 Female 25 Asymp 10.6210501
+GSM758061 11 29 Female 25 Asymp 10.0857001
+GSM758062 11 36 Female 25 Asymp 10.2785342
+GSM758063 11 45 Female 25 Asymp 10.355223
+GSM758064 11 53 Female 25 Asymp 10.2939075
+GSM758065 11 60 Female 25 Asymp 10.2725805
+GSM758066 11 69 Female 25 Asymp 9.73850821
+GSM758067 11 77 Female 25 Asymp 10.4527631
+GSM758068 11 84 Female 25 Asymp 10.8685638
+GSM758069 11 93 Female 25 Asymp 10.4540697
+GSM758070 11 101 Female 25 Asymp 10.4166936
+GSM758071 11 108 Female 25 Asymp 10.7202199
+GSM758073 12 0 Male 27 Symp 10.7756995
+GSM758074 12 5 Male 27 Symp 10.9348172
+GSM758075 12 12 Male 27 Symp 11.0503498
+GSM758076 12 21 Male 27 Symp 11.0875712
+GSM758077 12 29 Male 27 Symp 10.8350618
+GSM758078 12 36 Male 27 Symp 11.5541252
+GSM758079 12 45 Male 27 Symp 13.3133887
+GSM758080 12 53 Male 27 Symp 13.9254618
+GSM758081 12 60 Male 27 Symp 13.8263521
+GSM758082 12 69 Male 27 Symp 13.851832
+GSM758083 12 77 Male 27 Symp 13.705758
+GSM758084 12 84 Male 27 Symp 13.7215859
+GSM758085 12 93 Male 27 Symp 13.7875025
+GSM758086 12 101 Male 27 Symp 13.6143537
+GSM758087 12 108 Male 27 Symp 13.4158831
+GSM758088 13 0 Female 29 Symp 10.7223091
+GSM758089 13 5 Female 29 Symp 10.707486
+GSM758090 13 12 Female 29 Symp 10.3097051
+GSM758091 13 21 Female 29 Symp 10.6514492
+GSM758092 13 29 Female 29 Symp 11.3225256
+GSM758092 13 36 Female 29 Symp 11.285
+GSM758093 13 45 Female 29 Symp 11.233688
+GSM758094 13 53 Female 29 Symp 12.5849139
+GSM758095 13 60 Female 29 Symp 13.3203692
+GSM758096 13 69 Female 29 Symp 13.9109406
+GSM758097 13 77 Female 29 Symp 13.7728544
+GSM758098 13 84 Female 29 Symp 13.8190347
+GSM758099 13 93 Female 29 Symp 13.7407289
+GSM758100 13 101 Female 29 Symp 13.5363393
+GSM758101 13 108 Female 29 Symp 13.5562755
+GSM758103 14 0 Female 22 Asymp 11.8911147
+GSM758104 14 5 Female 22 Asymp 11.7248622
+GSM758105 14 12 Female 22 Asymp 11.6805106
+GSM758106 14 21 Female 22 Asymp 11.8924236
+GSM758107 14 29 Female 22 Asymp 11.7985239
+GSM758108 14 36 Female 22 Asymp 11.9140869
+GSM758109 14 45 Female 22 Asymp 12.1512826
+GSM758110 14 53 Female 22 Asymp 12.0263822
+GSM758111 14 60 Female 22 Asymp 12.2295492
+GSM758112 14 69 Female 22 Asymp 11.7983923
+GSM758113 14 77 Female 22 Asymp 12.1924189
+GSM758114 14 84 Female 22 Asymp 12.1551457
+GSM758115 14 93 Female 22 Asymp 12.0181456
+GSM758116 14 101 Female 22 Asymp 12.2592781
+GSM758117 14 108 Female 22 Asymp 12.3494127
+GSM758119 15 0 Male 26 Symp 10.9315502
+GSM758120 15 5 Male 26 Symp 11.0506709
+GSM758121 15 12 Male 26 Symp 11.1256904
+GSM758122 15 21 Male 26 Symp 11.0217078
+GSM758123 15 29 Male 26 Symp 11.3244597
+GSM758124 15 36 Male 26 Symp 11.3100778
+GSM758125 15 45 Male 26 Symp 11.1782123
+GSM758126 15 53 Male 26 Symp 11.4005096
+GSM758127 15 60 Male 26 Symp 11.4858015
+GSM758128 15 69 Male 26 Symp 11.989384
+GSM758129 15 77 Male 26 Symp 13.0451194
+GSM758130 15 84 Male 26 Symp 13.2190861
+GSM758131 15 93 Male 26 Symp 13.4985529
+GSM758132 15 101 Male 26 Symp 13.244785
+GSM758133 15 108 Male 26 Symp 13.3914839
+GSM758135 16 0 Male 41 Asymp 11.5410824
+GSM758136 16 5 Male 41 Asymp 10.905019
+GSM758137 16 12 Male 41 Asymp 10.7352138
+GSM758138 16 21 Male 41 Asymp 11.2591157
+GSM758139 16 29 Male 41 Asymp 10.6051165
+GSM758140 16 36 Male 41 Asymp 10.7612701
+GSM758141 16 45 Male 41 Asymp 11.4386192
+GSM758142 16 53 Male 41 Asymp 10.8769459
+GSM758143 16 60 Male 41 Asymp 13.0158189
+GSM758144 16 69 Male 41 Asymp 11.2839681
+GSM758145 16 77 Male 41 Asymp 10.5183707
+GSM758146 16 84 Male 41 Asymp 10.1881637
+GSM758147 16 93 Male 41 Asymp 10.926606
+GSM758148 16 101 Male 41 Asymp 10.6277178
+GSM758149 16 108 Male 41 Asymp 10.2250972
+GSM758151 17 0 Male 33 Asymp 12.3416743
+GSM758152 17 5 Male 33 Asymp 12.5073948
+GSM758153 17 12 Male 33 Asymp 11.8512589
+GSM758154 17 21 Male 33 Asymp 12.0151273
+GSM758155 17 29 Male 33 Asymp 11.9181688
+GSM758155 17 36 Male 33 Asymp 11.75
+GSM758156 17 45 Male 33 Asymp 11.5944119
+GSM758157 17 53 Male 33 Asymp 11.5465296
+GSM758158 17 60 Male 33 Asymp 10.4729724
+GSM758159 17 69 Male 33 Asymp 11.6856848
+GSM758160 17 77 Male 33 Asymp 11.3301075
+GSM758161 17 84 Male 33 Asymp 10.7367315
+GSM758162 17 93 Male 33 Asymp 11.4321758
+GSM758163 17 101 Male 33 Asymp 11.3405772
+GSM758164 17 108 Male 33 Asymp 10.6839903
+;
+run;
+
+proc sort data=fluvirus out=fluAgeSort;
+by Age Subject Hours;
+run;
+
+data fluCenter;
+set fluAgeSort;
+keep Subject Hours Gender Sex GS SYMGENAGE Age _Z CAR_Z SYMGEN SYM SYM2 SymColor SS IFITM3 I_3 center;
+Sex = Gender ;
+SYM2 = SYM ;
+I_3 = IFITM3 ;
+if Subject not = (Subject-1) then center=IFITM3;
+if Subject=Subject+1 then center=center+IFITM3;
+if Subject<Subject+1 then center=center/15;
+if SYM="Asymp" then SymColor="BLUE";
+if SYM="Symp" then SymColor="RED";
+if SYM="Asymp" then SS=14;
+if SYM="Symp" then SS=7;
+if Gender="Female" then GS=14;
+if Gender="Male" then GS=7;
+if SYM="Symp" and Gender="Female" then _Z=4;
+if SYM="Symp" and Gender="Male" then _Z=6;
+if SYM="Asymp" and Gender="Female" then _Z=10;
+if SYM="Asymp" and Gender="Male" then _Z=14;
+if SYM="Symp" and Gender="Female" then CAR_Z="*";
+if SYM="Symp" and Gender="Male" then CAR_Z="<";
+if SYM="Asymp" and Gender="Female" then CAR_Z="+";
+if SYM="Asymp" and Gender="Male" then CAR_Z="^";
+if SYM="Symp" and Gender="Female" then SYMGEN=0;
+if SYM="Symp" and Gender="Male" then SYMGEN=1;
+if SYM="Asymp" and Gender="Female" then SYMGEN=2;
+if SYM="Asymp" and Gender="Male" then SYMGEN=3;
+if SYM="Symp" and Gender="Female" then SYMGENAGE=1*Age;
+if SYM="Symp" and Gender="Male" then SYMGENAGE=10*Age;
+if SYM="Asymp" and Gender="Female" then SYMGENAGE=100*Age;
+if SYM="Asymp" and Gender="Male" then SYMGENAGE=1000*Age;
+run;
+/* Columnname Subject Hours Gender Age SYM IFITM3 */
+/** An attempt to merge data by subject **/
+data flu_clean;
+set fluCenter;
+keep Subject Gender SYM _Z IFITM3
+G_1 GS_1 A_1 S_1 SS_1 M_1 SZ_1 CAR_1 I3_1 C_1
+G_2 GS_2 A_2 S_2 SS_2 M_2 SZ_2 CAR_2 I3_2 C_2
+G_3 GS_3 A_3 S_3 SS_3 M_3 SZ_3 CAR_3 I3_3 C_3
+G_4 GS_4 A_4 S_4 SS_4 M_4 SZ_4 CAR_4 I3_4 C_4
+G_5 GS_5 A_5 S_5 SS_5 M_5 SZ_5 CAR_5 I3_5 C_5
+G_6 GS_6 A_6 S_6 SS_6 M_6 SZ_6 CAR_6 I3_6 C_6
+G_7 GS_7 A_7 S_7 SS_7 M_7 SZ_7 CAR_7 I3_7 C_7
+G_8 GS_8 A_8 S_8 SS_8 M_8 SZ_8 CAR_8 I3_8 C_8
+G_9 GS_9 A_9 S_9 SS_9 M_9 SZ_9 CAR_9 I3_9 C_9
+G_10 GS_10 A_10 S_10 SS_10 M_10 SZ_10 CAR_10 I3_10 C_10
+G_11 GS_11 A_11 S_11 SS_11 M_11 SZ_11 CAR_11 I3_11 C_11
+G_12 GS_12 A_12 S_12 SS_12 M_12 SZ_12 CAR_12 I3_12 C_12
+G_13 GS_13 A_13 S_13 SS_13 M_13 SZ_13 CAR_13 I3_13 C_13
+G_14 GS_14 A_14 S_14 SS_14 M_14 SZ_14 CAR_14 I3_14 C_14
+G_15 GS_15 A_15 S_15 SS_15 M_15 SZ_15 CAR_15 I3_15 C_15
+G_16 GS_16 A_16 S_16 SS_16 M_16 SZ_16 CAR_16 I3_16 C_16
+G_17 GS_17 A_17 S_17 SS_17 M_17 SZ_17 CAR_17 I3_17 C_17;
+merge fluCenter(where=(Subject=1) 
+rename=(Sex=G_1) rename=(GS=GS_1) rename=(Age=A_1) rename=(_Z=SZ_1) rename=(CAR_Z=CAR_1) rename=(SYM2=S_1) rename=(SS=SS_1) rename=(center=M_1) rename=(SymColor=C_1) rename=(I_3=I3_1))
+fluCenter(where=(Subject=2) 
+rename=(Sex=G_2) rename=(GS=GS_2) rename=(Age=A_2) rename=(_Z=SZ_2) rename=(CAR_Z=CAR_2) rename=(SYM2=S_2) rename=(SS=SS_2) rename=(center=M_2) rename=(SymColor=C_2) rename=(I_3=I3_2))
+fluCenter(where=(Subject=3) 
+rename=(Sex=G_3) rename=(GS=GS_3) rename=(Age=A_3) rename=(_Z=SZ_3) rename=(CAR_Z=CAR_3) rename=(SYM2=S_3) rename=(SS=SS_3) rename=(center=M_3) rename=(SymColor=C_3) rename=(I_3=I3_3))
+fluCenter(where=(Subject=4) 
+rename=(Sex=G_4) rename=(GS=GS_4) rename=(Age=A_4) rename=(_Z=SZ_4) rename=(CAR_Z=CAR_4) rename=(SYM2=S_4) rename=(SS=SS_4) rename=(center=M_4) rename=(SymColor=C_4) rename=(I_3=I3_4))
+fluCenter(where=(Subject=5) 
+rename=(Sex=G_5) rename=(GS=GS_5) rename=(Age=A_5) rename=(_Z=SZ_5) rename=(CAR_Z=CAR_5) rename=(SYM2=S_5) rename=(SS=SS_5) rename=(center=M_5) rename=(SymColor=C_5) rename=(I_3=I3_5))
+fluCenter(where=(Subject=6) 
+rename=(Sex=G_6) rename=(GS=GS_6) rename=(Age=A_6) rename=(_Z=SZ_6) rename=(CAR_Z=CAR_6) rename=(SYM2=S_6) rename=(SS=SS_6) rename=(center=M_6) rename=(SymColor=C_6) rename=(I_3=I3_6))
+fluCenter(where=(Subject=7) 
+rename=(Sex=G_7) rename=(GS=GS_7) rename=(Age=A_7) rename=(_Z=SZ_7) rename=(CAR_Z=CAR_7) rename=(SYM2=S_7) rename=(SS=SS_7) rename=(center=M_7) rename=(SymColor=C_7) rename=(I_3=I3_7))
+fluCenter(where=(Subject=8) 
+rename=(Sex=G_8) rename=(GS=GS_8) rename=(Age=A_8) rename=(_Z=SZ_8) rename=(CAR_Z=CAR_8) rename=(SYM2=S_8) rename=(SS=SS_8) rename=(center=M_8) rename=(SymColor=C_8) rename=(I_3=I3_8))
+fluCenter(where=(Subject=9) 
+rename=(Sex=G_9) rename=(GS=GS_9) rename=(Age=A_9) rename=(_Z=SZ_9) rename=(CAR_Z=CAR_9) rename=(SYM2=S_9) rename=(SS=SS_9) rename=(center=M_9) rename=(SymColor=C_9) rename=(I_3=I3_9))
+fluCenter(where=(Subject=10) 
+rename=(Sex=G_10) rename=(GS=GS_10) rename=(Age=A_10) rename=(_Z=SZ_10) rename=(CAR_Z=CAR_10) rename=(SYM2=S_10) rename=(SS=SS_10) rename=(center=M_10) rename=(SymColor=C_10) rename=(I_3=I3_10))
+fluCenter(where=(Subject=11) 
+rename=(Sex=G_11) rename=(GS=GS_11) rename=(Age=A_11) rename=(_Z=SZ_11) rename=(CAR_Z=CAR_11) rename=(SYM2=S_11) rename=(SS=SS_11) rename=(center=M_11) rename=(SymColor=C_11) rename=(I_3=I3_11))
+fluCenter(where=(Subject=12) 
+rename=(Sex=G_12) rename=(GS=GS_12) rename=(Age=A_12) rename=(_Z=SZ_12) rename=(CAR_Z=CAR_12) rename=(SYM2=S_12) rename=(SS=SS_12) rename=(center=M_12) rename=(SymColor=C_12) rename=(I_3=I3_12))
+fluCenter(where=(Subject=13) 
+rename=(Sex=G_13) rename=(GS=GS_13) rename=(Age=A_13) rename=(_Z=SZ_13) rename=(CAR_Z=CAR_13) rename=(SYM2=S_13) rename=(SS=SS_13) rename=(center=M_13) rename=(SymColor=C_13) rename=(I_3=I3_13))
+fluCenter(where=(Subject=14) 
+rename=(Sex=G_14) rename=(GS=GS_14) rename=(Age=A_14) rename=(_Z=SZ_14) rename=(CAR_Z=CAR_14) rename=(SYM2=S_14) rename=(SS=SS_14) rename=(center=M_14) rename=(SymColor=C_14) rename=(I_3=I3_14))
+fluCenter(where=(Subject=15) 
+rename=(Sex=G_15) rename=(GS=GS_15) rename=(Age=A_15) rename=(_Z=SZ_15) rename=(CAR_Z=CAR_15) rename=(SYM2=S_15) rename=(SS=SS_15) rename=(center=M_15) rename=(SymColor=C_15) rename=(I_3=I3_15))
+fluCenter(where=(Subject=16) 
+rename=(Sex=G_16) rename=(GS=GS_16) rename=(Age=A_16) rename=(_Z=SZ_16) rename=(CAR_Z=CAR_16) rename=(SYM2=S_16) rename=(SS=SS_16) rename=(center=M_16) rename=(SymColor=C_16) rename=(I_3=I3_16))
+fluCenter(where=(Subject=17) 
+rename=(Sex=G_17) rename=(GS=GS_17) rename=(Age=A_17) rename=(_Z=SZ_17) rename=(CAR_Z=CAR_17) rename=(SYM2=S_17) rename=(SS=SS_17) rename=(center=M_17) rename=(SymColor=C_17) rename=(I_3=I3_17));
+run;
+
+proc sgplot Data=flu_clean noautolegend;
+Title "Flu Virus Age Versus Mean IFTIM3";
+xaxis label="Age";
+yaxis label="the rise in IFTIM3 levels after 108 hours";
+
+scatter x=A_1 y=M_1/ MARKERCHAR=CAR_1 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_2 y=M_2/ MARKERCHAR=CAR_2 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_3 y=M_3/ MARKERCHAR=CAR_3 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_4 y=M_4/ MARKERCHAR=CAR_4 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_5 y=M_5/ MARKERCHAR=CAR_5 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_6 y=M_6/ MARKERCHAR=CAR_6 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_7 y=M_7/ MARKERCHAR=CAR_7 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_8 y=M_8/ MARKERCHAR=CAR_8 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_9 y=M_9/ MARKERCHAR=CAR_9 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_10 y=M_10/ MARKERCHAR=CAR_10 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_11 y=M_11/ MARKERCHAR=CAR_11 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_12 y=M_12/ MARKERCHAR=CAR_12 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_13 y=M_13/ MARKERCHAR=CAR_13 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_14 y=M_14/ MARKERCHAR=CAR_14 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_15 y=M_15/ MARKERCHAR=CAR_15 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_16 y=M_16/ MARKERCHAR=CAR_16 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+scatter x=A_17 y=M_17/ MARKERCHAR=CAR_17 colormodel=(BLUE RED) markerattrs=(size=14 symbol=CircleFilled);
+run; 
+
+proc summary data=fluCenter nway;
+  class Subject SYM Age Gender SYMGEN CAR_Z;
+  var IFITM3;
+  output out=IFITM3Center mean=mean;
+run;
+
+proc mixed data=fluCenter;
+	class SYMGEN Hours Subject;
+	model IFITM3=SYMGEN*Hours;
+	repeated Hours/ type=CS subject=Subject;
+	lsmeans SYMGEN*Hours / slice=Hours pdiff tdiff adjust=Tukey;
+	estimate 'Control  Verus  The Rest' SYMGEN*Hours 3.25 3.25 3.25 3.25 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 /divisor=14;
+	estimate 'Left of  12 Vs. The Rest' SYMGEN*Hours 2.75 2.75 2.75 2.75 1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 /divisor=13;
+	estimate 'Left of  21 Vs. The Rest' SYMGEN*Hours 2.25 2.25 2.25 2.25 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 /divisor=12;
+	estimate 'Left of  29 Vs. The Rest' SYMGEN*Hours 1.75 1.75 1.75 1.75 1 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 /divisor=11;
+	estimate 'Left of  36 Vs. The Rest' SYMGEN*Hours 1.25 1.25 1.25 1.25 1 1 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 /divisor=10;
+	estimate 'Left of  45 Vs. The Rest' SYMGEN*Hours 0.75 0.75 0.75 0.75 1 1 1 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 /divisor=9;
+	estimate 'Left of  53 Vs. The Rest' SYMGEN*Hours 0.25 0.25 0.25 0.25 1 1 1 1 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1 /divisor=8;
+	estimate 'Left of  60 Vs. The Rest' SYMGEN*Hours -.25 -.25 -.25 -.25 1 1 1 1 1 1 1 1 -1 -1 -1 -1 -1 -1 -1 /divisor=8;
+	estimate 'Left of  69 Vs. The Rest' SYMGEN*Hours -.75 -.75 -.75 -.75 1 1 1 1 1 1 1 1 1 -1 -1 -1 -1 -1 -1 /divisor=9;
+	estimate 'Left of  72 Vs. The Rest' SYMGEN*Hours -1.25 -1.25 -1.25 -1.25 1 1 1 1 1 1 1 1 1 1 -1 -1 -1 -1 -1 /divisor=10;
+	estimate 'Left of  84 Vs. The Rest' SYMGEN*Hours -1.75 -1.75 -1.75 -1.75 1 1 1 1 1 1 1 1 1 1 1 -1 -1 -1 -1 /divisor=11;
+	estimate 'Left of  93 Vs. The Rest' SYMGEN*Hours -2.25 -2.25 -2.25 -2.25 1 1 1 1 1 1 1 1 1 1 1 1 -1 -1 -1 /divisor=12;
+	estimate 'Left of 101 Vs. The Rest' SYMGEN*Hours -2.75 -2.75 -2.75 -2.75 1 1 1 1 1 1 1 1 1 1 1 1 1 -1 -1 /divisor=13;
+	estimate 'Left of 108 Vs. 108' SYMGEN*Hours -3.25 -3.25 -3.25 -3.25 1 1 1 1 1 1 1 1 1 1 1 1 1 1 -1 /divisor=14;
+run;
+	
+proc cusum data=fluVirus;
+   xchart IFITM3*Hours / 
+      mu0    = 11.100           /* Target mean for process  */
+      sigma0 = 0.50           /* Known standard deviation */
+      delta  = 1               /* Shift to be detected     */
+      alpha  = 0.10            /* Type I error probability */
+      vaxis  = 8 to 205 ;	/** http://support.sas.com/documentation/cdl/en/qcug/65562/HTML/default/viewer.htm#qcug_cusum_sect055.htm */
+   label IFITM3 = 'Cumulative Sum';
+   by Subject;
+run;
+
+proc shewhart data=fluVirus;
+   xschart IFITM3*Hours /
+      outtable = fluChart;
+	  by Subject;
+run;
+
+proc mcmc data=fluVirus outpost=postout seed=24860 ntu=1000
+             nmc=20000;
+      ods select PostSummaries;
+      ods output PostSummaries=ds;    
+      array beta[2];
+      parms alpha cp beta1 beta2;
+      parms s2;
+      prior cp ~ unif(-7, 7);
+      prior s2  ~ uniform(0, 5);
+      prior alpha beta:  ~ normal(0, v = 1e6);
+      j = 1 + (hours >= cp);
+      mu = alpha + beta[j] * (hours - cp);
+      model IFITM3 ~ normal(mu, var=s2);
+run;
+
+proc autoreg data = fluVirus;
+  model IFITM3 = hours / chow = (26);
+run;
+
+proc sgplot data=IFITM3Center;
+  reg x=Age y=mean ;
+run;
+
+proc sgplot data=IFITM3Center;
+  reg x=Age y=mean / group=SYMGEN;
+run;
+
+proc sgplot data=IFITM3Center;
+  scatter x=Age y=mean / group=SYMGEN MARKERCHAR=CAR_Z;
+  lineparm x=22 y=12.1 slope=-.04545;
+run;
+
+proc discrim pool=test data=fluCenter;
+  class SYMGEN;
+  var IFITM3;
+run;
+
+proc discrim data=fluCenter;
+  class SYMGENAGE;
+  var IFITM3;
+run;
+ 
+/*Descriptive Statistics*/
+PROC SORT DATA=fluVirus;
+BY SYM;
+RUN;
+
+PROC MEANS DATA=fluVirus Min  Mean  Median Max Var;
+by SYM;
+Class Hours;
+VAR IFITM3;
+RUN;
+
+/*specify which colors to use*/
+data Attrs;
+input id $ value $5. fillcolor $8.;
+datalines;
+SYM Asymp green   
+SYM Symp  red 
+;
+run;
+
+proc print data=Attrs;
+run;
+/*Box Plot*/
+title 'Boxplots for IFITM3 by Hours grouped by SYM catagory';
+proc sgplot data=fluVirus DATTRMAP=Attrs;
+  Vbox IFITM3 / category=Hours group=SYM attrid=SYM;
+  run;
+/*graphics for repeated Measures*/
+* Panel Plots IFTME3 over time;
+title 'Panelize spline plots for IFITM3 for each subject';
+proc sgpanel data = fluVirus;
+styleattrs datacontrastcolors=(red green);
+panelby Subject /columns=6 rows= 3;
+pbspline y = IFITM3 x = Hours / group=SYM ;
+run;
+*Sphaghetti plot;
+title 'Spline plot by subject';
+proc sgplot data = fluVirus;
+pbspline y = IFITM3 x = Hours
+/ group  = Subject nomarkers LINEATTRS = (THICKNESS = 1);
+run;
+*panel regression plots by Gender;
+title 'IFITM3 vs Hours Regression plots by gender and SYM';
+proc sgpanel data = fluVirus noautolegend;
+panelby Gender SYM;
+reg y = IFITM3 x = Hours
+/ group  = Subject nomarkers LINEATTRS = (pattern =1 Color = blue THICKNESS = 1);
+*add avg line;
+reg y = IFITM3 x = Hours
+/ group  = SYM nomarkers LINEATTRS = (pattern =1 Color = red THICKNESS = 3);
+run;
+*Panel regression Plots by SYM;
+title 'IFITM3 vs Hours Regression plots by  SYM';
+proc sgpanel data = fluVirus noautolegend;
+panelby SYM;
+reg y = IFITM3 x = Hours
+/ group  = Subject nomarkers LINEATTRS = (pattern =1 Color = blue THICKNESS = 1);
+*add avg line;
+reg y = IFITM3 x = Hours
+/ group  = SYM nomarkers LINEATTRS = (pattern =1 Color = red THICKNESS = 3);
+run;
+TITLE "Repeated Measures Model";
+
+proc mixed data=fluVirus plots=residualpanel;
+class SYM Subject Gender AGE Hours IFITM3;
+model IFITM3=Hours SYM  SYM*Hours;
+repeated Hours/ type=CS subject=Subject; 
+estimate 'Symp vs Asymp' SYM 1 -1; 
+lsmeans SYM*Hours/slice=Hours  adjust=Tukey; 
+run; quit;
+
+proc mixed data=fluCenter plots=residualpanel;
+class SYM Subject Gender AGE Hours IFITM3 SYMGENAGE;
+model IFITM3=Hours SYMGENAGE SYMGENAGE*Hours;
+repeated Hours/ type=CS subject=Subject; 
+estimate 'SYMGENAGE over HOURS' SYMGENAGE*Hours 1 -1; 
+lsmeans SYMGENAGE*Hours/slice=Hours  adjust=Tukey; 
+run; quit;
+
+/** (IGNORE, these plots do not add value to our analysis) Additional Scratch plots **/
+proc sgplot data=IFITM3Center;
+  scatter x=Age y=mean / group=Gender;
+run;
+
+proc sgplot data=IFITM3Center;
+  scatter x=Age y=mean / group=SYM;
+run;
+
+/* Define the graph template */
+proc template;
+  define statgraph scatterplot;
+    begingraph; 
+      entrytitle "Average IFITM3 By Age"; 
+      layout overlay / 
+        xaxisopts=(griddisplay=on gridattrs=(color=lightgray))
+        yaxisopts=(griddisplay=on gridattrs=(color=lightgray)
+          linearopts=(minorgrid=true minortickcount=9
+            minorgridattrs=(color=lightgray pattern=dot)));      
+        scatterplot x=Age y=mean / 
+          group=SYM groupdisplay=cluster
+          markerattrs=(size=14 symbol=CircleFilled);
+      endlayout;    
+    endgraph;
+  end;
+run;
+
+/* Render the graph */
+proc sgrender data=IFITM3Center template=scatterplot;
+run;
+/* Define the graph template */
+proc template;
+  define statgraph scatterplot;
+    begingraph; 
+      entrytitle "Average IFITM3 By Age"; 
+      layout overlay / 
+        xaxisopts=(griddisplay=on gridattrs=(color=lightgray))
+        yaxisopts=(griddisplay=on gridattrs=(color=lightgray)
+          linearopts=(minorgrid=true minortickcount=9
+            minorgridattrs=(color=lightgray pattern=dot)));      
+        scatterplot x=Age y=mean / 
+          group=Gender groupdisplay=cluster
+          markerattrs=(size=14 symbol=CircleFilled);
+      endlayout;    
+    endgraph;
+  end;
+run;
+
+/* Render the graph */
+proc sgrender data=IFITM3Center template=scatterplot;
+run;
+/*
+PROC GLM DATA=fluVirus PLOT=(DIAGNOSTICS RESIDUALS);
+ CLASS Subject SYM Age Gender Hours;
+ MODEL IFITM3 Hours = SYM;
+ OUTPUT OUT=ERRS R=EACT EANT;
+ MEANS IFITM3 / CLM T ALPHA=0.00833;
+ MEANS IFITM3 / CLDIFF T ALPHA=0.00833;
+ ESTIMATE 'Before CP V. After CP' Hours 1 1 1 1 1 1 -.75 -.75 -.75 -.75 -.75 -.75 -.75 -.75 / divisor=6;
+
+ MANOVA H=_ALL_ / PRINTE PRINTH CANONICAL;
+ 
+RUN;
+QUIT;
+
+
+PROC GLM DATA=fluVirus PLOT=(DIAGNOSTICS RESIDUALS);
+ CLASS Subject;
+ MODEL ENGEFF CYCTIME = DRYRTYPE;
+ OUTPUT OUT=ERRS R=EACT EANT;
+ MEANS DRYRTYPE / CLM T ALPHA=0.00833;
+ MEANS DRYRTYPE / CLDIFF T ALPHA=0.00833;
+ ESTIMATE 'Dryer 3 vs. Dryer 1, 2 and 4' DRYRTYPE -1 -1 3 -1 / divisor=3;
+ ESTIMATE 'Dryer 4 vs. Dryer 1, 2 and 3' DRYRTYPE -1 -1 -1 3 / divisor=3;
+ ESTIMATE 'Electric vs. Gas' DRYRTYPE 1 1 -1 -1;
+
+ MANOVA H=_ALL_ / PRINTE PRINTH CANONICAL;
+ 
+RUN;
+QUIT;
+
+/**This did not provide interpretable estimates *//*
+proc mixed data=fluCenter;
+	class SYMGEN Hours Subject;
+	model IFITM3=SYMGEN*Hours;
+	repeated Hours/ type=CS subject=Subject;
+	lsmeans SYMGEN*Hours / pdiff tdiff adjust=Tukey;
+	estimate 'Hour 0 Vs. Hour   5' SYMGEN*Hours .2 .2 .2 .2 .2 -1 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  12' SYMGEN*Hours .2 .2 .2 .2 .2 0 -1 0 0 0 0 0 0 0 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  21' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 -1 0 0 0 0 0 0 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  29' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 -1 0 0 0 0 0 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  36' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 -1 0 0 0 0 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  45' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 -1 0 0 0 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  53' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 0 -1 0 0 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  60' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 0 0 -1 0 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  69' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 0 0 0 -1 0 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  72' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 0 0 0 0 -1 0 0 0 0;
+	estimate 'Hour 0 Vs. Hour  84' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 0 0 0 0 0 -1 0 0 0;
+	estimate 'Hour 0 Vs. Hour  93' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0;
+	estimate 'Hour 0 Vs. Hour 101' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 0 0 0 0 0 0 0 -1 0;
+	estimate 'Hour 0 Vs. Hour 108' SYMGEN*Hours .2 .2 .2 .2 .2 0 0 0 0 0 0 0 0 0 0 0 0 0 -1;
+run;
+	
+*/
